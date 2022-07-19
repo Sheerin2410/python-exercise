@@ -1,11 +1,5 @@
 #JAY BHAVANI VADAPAV TASK
 
-
-
-
-
-
-
 qty_list = []
 price=[]
 product=[]
