@@ -1,5 +1,4 @@
 import random
-
 for i in range(80):
     print("*",end="")
     
@@ -18,11 +17,12 @@ for i in range(80):
 print()
 print("\n\t\tOK ",a," Let's Start The Game")
 
-questions=["Who is The Prime Minister of India","In Which Country Area 51 is Located","Which one is the largest Continent in the world","What is the Latest Version of Windows Since 2019","Which One of These Is not a Software Company","How Many MB Makes 1 GB","Facebook Was Firstly Developed By","Founder of Apple is","_________ is one of The Founder of Google","BIGG BOSS season 13 Starts in ____ & ends in _____","Apple's Laptop is Also Known as","First Apple Computer is Known as","Joystick is used For","____________ is used to Encrypt Drives in Computer"]
-answer=["Narendra Modi","United States","Asia","Windows 10","Honda","1024","Mark Zuckenberg","Steve Jobs","Larry Page","2019 - 2020","Macbook","Mactonish","Playing Games","Bitlocker"]
-wronganswers=[["Amit Shah","Aditya Nath Yogi","Azhar Ansari"],["India","Africa","Iraq"],["South Africa","North America","Europe"],["Windows 7","Windows 8","Windows 11"],["Oracle","Microsoft","Google"],["10024","1004","2024"],["Bill Gates","Larry Page","Azhar Ansari"],["Azhar Ansari","Charles Babbage","Sundar Pichai"],["Larry Hensberg","Sunder Pichai","Bill Gates"],["2020 - 2021","Not Starts Now","2018 - 2019"],["ThinBook","Notebook","ChromeBook"],["Apple v.1","Apple Computer","Appbook"],["Giving output command","Shutting down Computer","Log off Computer"],["KeyGuard","Windows Secure","No Software like this"]]
+questions=["Jimmy's father has three sons- Paul I and Paul II. Can you guess the name of the third son? ","You're 4th place right now in a race. What place will you be in when you pass the person in 3rd place?","How many months have 28 days?","There are two clocks of different colors: The green clock is broken and doesn't run at all, but the yellow clock loses one second every 24 hours. Which clock is more accurate? ","If a leaf falls to the ground in a jungle, and no one hears it, will it make a sound? "]
+answer=["jimmy","3rd","all months","Green clock","yes"]
+wronganswers=[["Paul II","Paul III","Paul I"],["1st","2nd","4th"],["1","2","Depends if there's a leap year or not"],["yellow clock","none","both"],["no","depend on how the heavy leaf was","depend on the palce it lands"]]
+
 attempquestion=[]
-count=1
+count=0
 amount=0
 while True:
     while True:
@@ -37,6 +37,7 @@ while True:
     optionslist=[]
     inoptionlist=[]
     optioncount=1
+    count+=1
     while optioncount<4:
         optionselection=random.choice(wronganswers[questionindex])
         if optionselection in inoptionlist:
@@ -44,7 +45,7 @@ while True:
         elif optionselection not in inoptionlist:
             optionslist.append(optionselection)
             inoptionlist.append(optionselection)
-            optioncount+=1
+            optioncount+=1    
     optionslist.append(correctanswer)
     alreadydisplay=[]
     optiontodisplay=[]
@@ -120,16 +121,13 @@ while True:
         if count==1:
             amount+=50
             print("\n\n\t\t You Won Rs. ",amount)
+            
             print()
     
         print("\t\t\t|||||||||| Right Answer ||||||||||")
-        print("*********************************************************************************")
+        print("*********")
         
     else :
         if useranswer not in answer:
          amount-=50
         print("\n\n\t\t You Won Rs. ",amount)
-        
-    
-
-    

@@ -1,4 +1,3 @@
-# PRODUCT MANAGER
 from secrets import choice
 
 

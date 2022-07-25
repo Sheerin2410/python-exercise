@@ -1,4 +1,4 @@
-
+from unicodedata import name
 
 
 counsellor={}
@@ -95,8 +95,11 @@ while status:
                         print("Serial No: ",srno)
                         print("First Name: ",counsellor[srno]["fname"])
                         print("Last Name: ",counsellor[srno]["lname"])
+                    
+                             
+
                         print("Contact : ",counsellor[srno]["contact"])
-                       # print("Subject: ",counsellor[srno]["subject"])
+                        print("Subject: ",counsellor[srno]["subject"])
 
                         for j in counsellor[srno]["subject"].keys():
                             print("Subject: ",j)
