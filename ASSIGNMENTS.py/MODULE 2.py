@@ -1,4 +1,6 @@
-# MODULE 2:
+#---------------------------------------------------------------------------------------------------------------------------------------#
+#                                                           MODULE - 2                                                                  #
+#---------------------------------------------------------------------------------------------------------------------------------------#
 
 #Write a Python program to check if a number is positive, negative or zero.
 """num = int(input("enter number : "))
@@ -12,9 +14,6 @@ else:
 print(num)"""
 
 #Write a Python program to get the Factorial number of given number.
-
-
-
 
 """num = int(input("enter number : "))
 factorial=1
