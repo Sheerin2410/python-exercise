@@ -1,0 +1,56 @@
+﻿{% extends 'chairmanapp\index.html' %}
+{% block content %}    
+       <section class="content home">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                        <h2>Complain <small class="text-muted"><b>DETAILS</b></small></h2>
+                    </div>            
+                    <div class="col-lg-7 col-md-7 col-sm-12 text-right">
+                        
+                                                    <button class="btn btn-white btn-icon btn-round d-none d-md-inline-block float-right m-l-10" type="button">
+                                <i class="zmdi zmdi-plus"></i>
+                            </button>
+                        
+                        
+                        <ul class="breadcrumb float-md-right">
+                            <li class="breadcrumb-item"><a href="..\dashboard\index.html"><i class="zmdi zmdi-home"></i> Digital Society</a></li>
+                            <li class="breadcrumb-item">Complains</li>
+                            <li class="breadcrumb-item active">All</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">                
+    {% for item in complain %}            
+    <div class="row clearfix">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card project_widget">
+                <div class="pw_img">
+                    <img class="img-fluid" src="{{cid.pic.url}}" alt="About the image">
+                </div>
+                <div class="pw_content">
+                    <div class="pw_header">
+                        <h3 class="m-t-0 m-b-5"><a href="{% url 'view-complain' %}">{{item.title}}</a></h3>
+                        <ul class="list-unstyled team-info margin-0 p-t-15">
+                          
+                            
+                                <li><a href="#"><i class="zmdi zmdi-account col-blue"></i>Posted By: {{item.user_id.role}}</a></li>
+                                <li><a href="#"><i class="zmdi zmdi-alarm col-blue"></i>Updated at : {{item.whenpublishedcomplain}}</a></li>
+                            </ul>
+                    </div>
+                    <div class="pw_meta">
+                        <p>{{item.description}}</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+
+            </div>
+        </section>
+        {% endblock %}
+                
