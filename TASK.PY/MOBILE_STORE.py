@@ -1,6 +1,3 @@
-from secrets import choice
-
-
 Mobile_store = {}
 menu = """
          MENU

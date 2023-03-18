@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>MY FIRST WEB PAGE</title>
+    </head>
+    <body bgcolor="pink">       
+     <h1>Registration Form</h1>
+     <form>
+        <table>
+            <tr>
+        <td>Enter Your Name :</td>
+
+        <td>
+            <input type="text" name="name" placeholder="Enter Your Name" required />
+        </td>
+           </tr>
+
+        <tr>
+            <td>Enter Your Email :</td>
+
+        <td>
+            <input type="email" name="email" placeholder="Enter Your Email" value="Sheerin@gmail.com" readonly disabled/>
+        </td>    
+        </tr>
+        <tr>
+            <td>Enter Password : </td>
+            <td>
+                <input type="password" name="password" placeholder="Enter Password"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <input type="radio" name="Gender" value="Male" />Male
+                <input type="radio" name="Gender" value="Female" />Female
+                <input type="radio" name="Gender" value="Other" />Other
+            </td>
+        </tr>
+        <tr>
+            <tr>
+                <td>Subjects :</td>
+                <td>
+                    <input type="checkbox" name="b1" value="C" />C Language
+                    <input type="checkbox" name="b1" value="C++" />C++ Language
+                    <input type="checkbox" name="b1" value="Python" />Python Language
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Birthdate :</td>
+                <td>
+                    <input type="date" name="bday" />
+                </td>
+            </tr>
+            <tr>
+                <td>Choose Color :</td>
+                <td>
+                    <input type="color" />
+                </td>
+            </tr>
+            <tr>
+                <td>Suggesion :</td>
+                <td>
+                    <textarea rows="5" cols="20" placeholder="Type here something...."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Mobile Number :</td>
+                <td>
+                    <input type="number" name="number" placeholder="Mobile No" max="10"/>
+                </td>
+            </tr>
+            <tr>
+            <td>
+                <input type="submit" name="submit" value="submit" />
+                <input type="reset" name="reset" value="reset" />
+
+            </td>
+        </tr>
+        
+    </table>
+</form>
+    </body>
+</html>
